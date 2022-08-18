@@ -29,6 +29,7 @@ img {
   font-size: 16px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .field {
@@ -39,4 +40,9 @@ img {
 .value {
   font-size: 18px;
   font-weight: 600;
+}
+
+input {
+  font-size: 18px;
+  border-radius: 5px;
 }
