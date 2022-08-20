@@ -62,11 +62,11 @@ rest.btnStart.addEventListener('click', startButton);
 rest.btnStart.setAttribute('disabled', true);
 
 function startButton() {
-  timer = setInterval(() => {
+  timerId = setInterval(() => {
     const deltaTime = timeData - new Date().getTime();
 
     if (deltaTime <= 0) {
-      clearInterval(timer);
+      clearInterval(timerId);
       return;
     }
     const time = convertMs(deltaTime);
