@@ -54,4 +54,5 @@ function btnSubmit(e) {
   const step = form.step.value;
   const amount = form.amount.value;
   start(delay, step, amount);
+  e.currentTarget.reset(); // очищает инпут после сабмита
 }
